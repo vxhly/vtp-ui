@@ -1,0 +1,3 @@
+.{prefix}-{compoenntName} {
+  box-sizing: border-box;
+}

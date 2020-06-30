@@ -1,0 +1,11 @@
+*.js
+*-lock.*
+*.lock
+.browserslistrc
+.editorconfig
+.npmrc
+build/
+docs/
+scripts/
+tests/
+public/

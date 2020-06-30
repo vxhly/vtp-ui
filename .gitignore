@@ -10,7 +10,10 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
+
+# lock
+*.lock
+*-lock.json
 
 # Editor directories and files
 .idea

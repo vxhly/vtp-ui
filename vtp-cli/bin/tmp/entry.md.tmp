@@ -1,0 +1,58 @@
+# {upperCompoenntName} {docsTitle}
+
+::: tip 组件作用说明
+这是 {compoenntName} 组件的说明文案
+:::
+
+## Code Demo
+
+### 基础用法
+
+::: demo 基础用法
+
+```vue
+<template>
+  <{prefix}-{compoenntName}>
+  </{prefix}-{compoenntName}>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+```
+
+:::
+
+## Used
+
+### 按需引入
+
+``` javascript
+import Vue from 'vue'
+import {
+  {upperCompoenntName}
+} from '{orgPrefix}{librarieName}'
+
+Vue.use({upperCompoenntName})
+```
+
+### 局部引入
+
+``` javascript
+import {
+  {upperCompoenntName}
+} from '{orgPrefix}{librarieName}'
+
+export default {
+  components: {
+    {upperCompoenntName}
+  }
+}
+```
+
+## API
+
+<[vuese-h3](@/packages/{compoenntName}/{upperCompoenntName}.vue)
+

@@ -1,0 +1,5 @@
+$prefix-cls: '{prefix}-{compoenntName}';
+
+.#{$prefix-cls} {
+  box-sizing: border-box;
+}

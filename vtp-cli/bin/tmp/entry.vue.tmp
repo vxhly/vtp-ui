@@ -1,0 +1,29 @@
+<template>
+  <div class="{prefix}-{compoenntName}">
+    {compoenntName}
+  </div>
+</template>
+
+<script>
+/**
+ * @packageName {docsTitle}
+ * @packageType {packageType}
+ * @explanation 这是 {compoenntName} 组件的说明文案
+ */
+
+export default {
+  name: '{upperPrefix}{upperCompoenntName}',
+
+  props: {},
+
+  data () {
+    return {}
+  },
+
+  methods: {}
+}
+</script>
+
+<style lang="scss">
+  @import '../theme-chalk/{compoenntName}';
+</style>

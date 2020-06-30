@@ -1,0 +1,11 @@
+import {upperCompoenntName} from './{upperCompoenntName}'
+
+{upperCompoenntName}.install = function (Vue) {
+  Vue.component({upperCompoenntName}.name, {upperCompoenntName})
+}
+
+export default {upperCompoenntName}
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.component({upperCompoenntName}.name, {upperCompoenntName})
+}

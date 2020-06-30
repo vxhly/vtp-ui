@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>指南 | vtp-ui</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.b7ece585.css" as="style"><link rel="preload" href="/assets/js/app.a2a31f79.js" as="script"><link rel="preload" href="/assets/js/2.f5f351f1.js" as="script"><link rel="preload" href="/assets/js/7.f71e3931.js" as="script"><link rel="prefetch" href="/assets/js/3.9d12ffef.js"><link rel="prefetch" href="/assets/js/4.cf84fc3a.js"><link rel="prefetch" href="/assets/js/5.d036ffdb.js"><link rel="prefetch" href="/assets/js/6.4133726a.js"><link rel="prefetch" href="/assets/js/8.65a716bf.js"><link rel="prefetch" href="/assets/js/9.e6198110.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b7ece585.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">vtp-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/Guide.html" aria-current="page" class="active sidebar-link">指南</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Guide.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/Guide.html#install" class="sidebar-link">Install</a></li><li class="sidebar-sub-header"><a href="/Guide.html#used" class="sidebar-link">Used</a></li></ul></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>普通组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/base/Button.html" class="sidebar-link">Button 按钮</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>业务组件</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="指南"><a href="#指南" class="header-anchor">#</a> 指南</h1> <h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>开箱即用的 Vue 组件库, 二次封装 Element-UI 自定义组件库, 收集或者改进其他 UI 框架中的实用的组件</p></div> <h2 id="install"><a href="#install" class="header-anchor">#</a> Install</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p>安装前注意：
+因为是私有的组件库, npm 代理也是私有的, 所以需要在项目目录下创建 <code>.npmrc</code> 文件，里面添加以下内容</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>registry=http://[ip]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> vtp-ui
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="used"><a href="#used" class="header-anchor">#</a> Used</h2> <h3 id="一键全局引入"><a href="#一键全局引入" class="header-anchor">#</a> 一键全局引入</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> EhUI <span class="token keyword">from</span> <span class="token string">'vtp-ui'</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> <span class="token string">'vtp-ui/lib/vtp-ui.css'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>EhUI<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="按需引入"><a href="#按需引入" class="header-anchor">#</a> 按需引入</h3> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>安装 <a href="https://github.com/ElementUI/babel-plugin-component#readme" target="_blank" rel="noopener noreferrer"><code>babel-plugin-component</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 插件</p></div> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> i -d babel-plugin-component 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>配置 <code>babel.config.js</code></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">'plugins'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">'component'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">'libraryName'</span><span class="token operator">:</span> <span class="token string">'element-ui'</span><span class="token punctuation">,</span>
+        <span class="token string">'styleLibraryName'</span><span class="token operator">:</span> <span class="token string">'theme-chalk'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">'element-ui'</span> <span class="token comment">// 多个 UI 库下必须配置 </span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">'component'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">'libraryName'</span><span class="token operator">:</span> <span class="token string">'vtp-ui'</span><span class="token punctuation">,</span>
+        <span class="token string">'styleLibraryName'</span><span class="token operator">:</span> <span class="token string">'theme-chalk'</span><span class="token punctuation">,</span>
+        <span class="token string">'libDir'</span><span class="token operator">:</span> <span class="token string">'packages'</span> <span class="token comment">// 这句话要写, 否则识别不到组件目录</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">'vtp-ui'</span> <span class="token comment">// 多个 UI 库下必须配置</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>到此您就可以按需引入你的组件了</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 组件名</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vtp-ui'</span> <span class="token comment">// 将会自动导入 css 文件</span>
+
+<span class="token comment">// Vue.use(组件名)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/base/Button.html">
+        Button 按钮
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a2a31f79.js" defer></script><script src="/assets/js/2.f5f351f1.js" defer></script><script src="/assets/js/7.f71e3931.js" defer></script>
+  </body>
+</html>

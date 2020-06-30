@@ -1,0 +1,16 @@
+{
+  "name": "vtp-cli",
+  "version": "1.0.0",
+  "description": "vtp-ui 组件库的专属命令行工具",
+  "bin": {
+    "vtp": "./bin/vtp-cli.js"
+  },
+  "author": "vxhly <pengchengou@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "inquirer": "^7.0.0",
+    "uppercamelcase": "^3.0.0"
+  }
+}
