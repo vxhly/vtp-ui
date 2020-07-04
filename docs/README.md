@@ -32,9 +32,9 @@ yarn add vtp-ui
 ### 使用
 
 ``` bash
-import EhUI from '@xl/eh-ui'
+import VtpUI from 'vtp-ui'
 import Vue from 'vue'
-import '@xl/eh-ui/lib/eh-ui.css'
+import 'vtp-ui/lib/vtp-ui.css'
 
-Vue.use(EhUI)
+Vue.use(VtpUI)
 ```
