@@ -16,6 +16,12 @@ footer: Copyright © 2020
 
 ## 像数 1, 2, 3 一样容易
 
+### 修改 .npmrc 文件
+
+``` text
+registry=http://[ip]:[port]
+```
+
 ### 安装
 
 ``` bash
